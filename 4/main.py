@@ -47,10 +47,7 @@ def p1(f):
 
 def p2(f):
     data = np.array(readfile(f))
-    is_m = data == "M"
     is_a = data == "A"
-    is_s = data == "S"
-    is_x = data == "X"
 
     count = 0
 
