@@ -1,9 +1,9 @@
 import itertools as it
 import numpy as np
+
 def readfile(f):
     with open(f, "r") as io:
         return [[xi for xi in x] for x in io.read().split("\n") if len(x) > 0]
-
 
 
 def p1(f):
