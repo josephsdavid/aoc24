@@ -84,11 +84,6 @@ def p2(f):
                 break
         is_row_valid.append(row_is_valid)
 
-    inverted_rules = {}
-    for key, values in rules.items():
-        for value in values:
-            inverted_rules.setdefault(value, []).append(key)
-
     middle_pages = []
     for valid_row, row in zip(is_row_valid, page_numbers):
         if not valid_row:
